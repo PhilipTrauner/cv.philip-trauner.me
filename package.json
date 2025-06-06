@@ -1,0 +1,26 @@
+{
+  "name": "cv",
+  "type": "module",
+  "devDependencies": {
+    "@jgoz/esbuild-plugin-typecheck": "^4.0.3",
+    "@napi-rs/image": "^1.9.2",
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/mime-types": "^3.0.0",
+    "@types/node": "^22.15.29",
+    "@types/react-dom": "^19.1.5",
+    "autoprefixer": "^10.4.21",
+    "esbuild": "0.25.5",
+    "image-size": "^2.0.2",
+    "mime-types": "^3.0.1",
+    "postcss": "^8.5.4",
+    "svgo": "^3.3.2",
+    "tailwindcss": "^4.1.8",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

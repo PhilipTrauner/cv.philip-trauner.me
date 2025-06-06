@@ -1,0 +1,17 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "strict": true,
+    "rootDir": "src",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "lib": ["es6", "dom", "ES2021.String"],
+    "target": "ES2021",
+    "jsx": "react",
+    "skipLibCheck": true
+  }
+}

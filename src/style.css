@@ -1,0 +1,497 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-Bold.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-Regular.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-SemiBold.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-ExtraLightItalic.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-Regular.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-MediumItalic.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-SemiBoldItalic.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-Medium.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-Italic.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-MediumItalic.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-Thin.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-LightItalic.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-SemiBoldItalic.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-Medium.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-Light.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-Light.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-BoldItalic.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-ThinItalic.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-SemiBold.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-ExtraLight.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-MediumItalic.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-SemiBold.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-Italic.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-ExtraLightItalic.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-LightItalic.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-ExtraLight.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-Thin.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-ThinItalic.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-Bold.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-BoldItalic.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-Medium.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-ExtraLight.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-Light.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-Italic.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-SemiBoldItalic.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-ThinItalic.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-Regular.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-ExtraLightItalic.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_Condensed-Thin.woff2") format("woff2");
+    font-stretch: condensed;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans_SemiCondensed-BoldItalic.woff2") format("woff2");
+    font-stretch: semi-condensed;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url("font/IBMPlexSans-Bold.woff2") format("woff2");
+    font-stretch: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("font/Unbounded-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("font/Unbounded-Light.woff2") format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("font/Unbounded-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("font/Unbounded-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("font/Unbounded-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("font/Unbounded-Bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("font/Unbounded-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+}
+
+@theme {
+    /* <alpha-value> doesn't work anymore 🫠 */
+    /*
+    --color-label: rgb(from var(--color-label) r g b / calc(alpha * <alpha-value>));
+    --color-label-secondary: rgb(
+        from var(--color-label-secondary) r g b / calc(alpha * <alpha-value>)
+    );
+    --color-label-tertiary: rgb(
+        from var(--color-label-tertiary) r g b / calc(alpha * <alpha-value>)
+    );
+    --color-label-quaternary: rgb(
+        from var(--color-label-quaternary) r g b / calc(alpha * <alpha-value>)
+    );
+
+    --color-gray-1: rgb(from var(--color-gray-1) r g b / calc(alpha * <alpha-value>));
+    --color-gray-2: rgb(from var(--color-gray-2) r g b / calc(alpha * <alpha-value>));
+    --color-gray-3: rgb(from var(--color-gray-3) r g b / calc(alpha * <alpha-value>));
+    --color-gray-4: rgb(from var(--color-gray-4) r g b / calc(alpha * <alpha-value>));
+    --color-gray-5: rgb(from var(--color-gray-5) r g b / calc(alpha * <alpha-value>));
+    --color-gray-6: rgb(from var(--color-gray-6) r g b / calc(alpha * <alpha-value>));
+
+    --color-separator: rgb(from var(--color-separator) r g b / calc(alpha * <alpha-value>));
+    --color-separator-opaque: rgb(
+        from var(--color-separator-opaque) r g b / calc(alpha * <alpha-value>)
+    );
+
+    --color-background: rgb(from var(--color-background) r g b / calc(alpha * <alpha-value>));
+    --color-background-secondary: rgb(
+        from var(--color-background-secondary) r g b / calc(alpha * <alpha-value>)
+    );
+    --color-background-tertiary: rgb(
+        from var(--color-background-tertiary) r g b / calc(alpha * <alpha-value>)
+    );
+
+    --color-fill: rgb(from var(--color-fill) r g b / calc(alpha * <alpha-value>));
+    --color-fill-secondary: rgb(
+        from var(--color-fill-secondary) r g b / calc(alpha * <alpha-value>)
+    );
+    --color-fill-tertiary: rgb(from var(--color-fill-tertiary) r g b / calc(alpha * <alpha-value>));
+    --color-fill-quarterary: rgb(
+        from var(--color-fill-quarterary) r g b / calc(alpha * <alpha-value>)
+    );
+    */
+
+    --color-label: rgb(from var(---color-label) r g b);
+    --color-label-secondary: rgb(from var(---color-label-secondary) r g b);
+    --color-label-tertiary: rgb(from var(---color-label-tertiary) r g b);
+    --color-label-quaternary: rgb(from var(---color-label-quaternary) r g b);
+
+    --color-gray-1: rgb(from var(---color-gray-1) r g b);
+    --color-gray-2: rgb(from var(---color-gray-2) r g b);
+    --color-gray-3: rgb(from var(---color-gray-3) r g b);
+    --color-gray-4: rgb(from var(---color-gray-4) r g b);
+    --color-gray-5: rgb(from var(---color-gray-5) r g b);
+    --color-gray-6: rgb(from var(---color-gray-6) r g b);
+
+    --color-separator: rgb(from var(---color-separator) r g b);
+    --color-separator-opaque: rgb(from var(---color-separator-opaque) r g b);
+
+    --color-background: rgb(from var(---color-background) r g b);
+    --color-background-secondary: rgb(from var(---color-background-secondary) r g b);
+    --color-background-tertiary: rgb(from var(---color-background-tertiary) r g b);
+
+    --color-fill: rgb(from var(---color-fill) r g b);
+    --color-fill-secondary: rgb(from var(---color-fill-secondary) r g b);
+    --color-fill-tertiary: rgb(from var(---color-fill-tertiary) r g b);
+    --color-fill-quarterary: rgb(from var(---color-fill-quarterary) r g b);
+}
+
+@utility color-scheme-light {
+    ---color-label: black;
+    ---color-label-secondary: rgba(60, 60, 67, 0.6);
+    ---color-label-tertiary: rgba(60, 60, 67, 0.3);
+    ---color-label-quaternary: rgba(60, 60, 67, 0.18);
+
+    ---color-gray-1: rgb(142, 142, 147);
+    ---color-gray-2: rgb(174, 174, 178);
+    ---color-gray-3: rgb(199, 199, 204);
+    ---color-gray-4: rgb(209, 209, 214);
+    ---color-gray-5: rgb(229, 229, 234);
+    ---color-gray-6: rgb(242, 242, 247);
+
+    ---color-separator: rgba(60, 60, 67, 0.36);
+    ---color-separator-opaque: rgb(198, 198, 200);
+
+    ---color-background: white;
+    ---color-background-secondary: rgb(242, 242, 247);
+    ---color-background-tertiary: white;
+
+    ---color-fill: rgba(120, 120, 128, 0.2);
+    ---color-fill-secondary: rgba(120, 120, 128, 0.16);
+    ---color-fill-tertiary: rgba(118, 118, 128, 0.12);
+    ---color-fill-quaternary: rgba(116, 116, 128, 0.08);
+}
+
+@utility color-scheme-dark {
+    ---color-label: white;
+    ---color-label-secondary: rgba(235, 235, 245, 0.6);
+    ---color-label-tertiary: rgba(235, 235, 245, 0.3);
+    --color-label-quaternary: rgba(235, 235, 245, 0.18);
+
+    ---color-gray-1: rgb(142, 142, 147);
+    ---color-gray-2: rgb(99, 99, 102);
+    ---color-gray-3: rgb(72, 72, 74);
+    ---color-gray-4: rgb(58, 58, 60);
+    ---color-gray-5: rgb(44, 44, 46);
+    ---color-gray-6: rgb(28, 28, 30);
+
+    ---color-separator: rgba(84, 84, 88, 0.65);
+    ---color-separator-opaque: rgb(56, 56, 58);
+
+    ---color-background: black;
+    ---color-background-secondary: rgb(28, 28, 30);
+    ---color-background-tertiary: rgb(44, 44, 46);
+
+    ---color-fill: rgba(120, 120, 128, 0.36);
+    ---color-fill-secondary: rgba(120, 120, 128, 0.32);
+    ---color-fill-tertiary: rgba(118, 118, 128, 0.24);
+    ---color-fill-quaternary: rgba(116, 116, 128, 0.18);
+}
+
+@layer base {
+    @media (prefers-color-scheme: light) {
+        :root {
+            @apply color-scheme-light;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            @apply color-scheme-dark;
+        }
+    }
+}
+
+body {
+    font-family: "IBMPlexSans", "-apple-system", "BlinkMacSystemFont", "sans-serif";
+    font-display: swap;
+    color: var(--color-label);
+    background-color: var(--color-background);
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
