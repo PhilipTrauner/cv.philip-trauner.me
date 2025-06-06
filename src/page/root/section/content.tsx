@@ -166,11 +166,12 @@ export const PageRootSectionContent = () => {
                 </p>
               </div>
               <div className="text-sm">
-                what i'm also passionate about:{" "}
+                what i'm also passionate about:
                 <span className="font-stretch-condensed font-medium">#photography</span>{" "}
                 <span className="font-stretch-condensed font-medium">#3d-printing</span>{" "}
                 <span className="font-stretch-condensed font-medium">#music</span>{" "}
-                <span className="font-stretch-condensed font-medium">#gaming</span>
+                <span className="font-stretch-condensed font-medium">#gaming</span>{" "}
+                <span className="font-stretch-condensed font-medium">#star-trek</span>
               </div>
             </div>
 
@@ -214,7 +215,10 @@ export const PageRootSectionContent = () => {
                   </div>
                   <div className="row-2 col-2">
                     <div className="pl-4 pb-4 flex flex-col gap-y-1">
-                      <div className="text-sm">companion app for music</div>
+                      <div className="text-sm">
+                        companion app for music, with catalog browsing, play history filtering,
+                        universal track links, and customizable user profiles
+                      </div>
                       <ul className="list-disc [&>*:not(:last-child)]:mb-2">
                         <li>
                           <div className="inline-flex flex-col flex-wrap gap-y-2">
