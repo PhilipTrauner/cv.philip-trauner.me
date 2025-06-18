@@ -11,6 +11,7 @@ import OrganisatonLlb from "sized:organisation/llb.png" with { resize: "w=128" }
 import OrganisatonHims from "sized:organisation/hims.png" with { resize: "w=128" };
 import OrganisatonCybertec from "sized:organisation/cybertec.png" with { resize: "w=128" };
 import OrganisatonHtl from "sized:organisation/htl.png" with { resize: "w=128" };
+import { PageRootSectionFooter } from "./footer";
 
 const Circle = (props: HTMLProps<HTMLDivElement> & { children?: ReactNode }) => {
   const { children, className, ...intrinsics } = props;
@@ -144,42 +145,45 @@ export const PageRootSectionContent = () => {
     <ContextSelectedTag value={selectedTag}>
       <div className="grow w-full h-full">
         <div className="max-w-3xl my-4 mx-4 md:mx-auto">
-          <div className="flex flex-col gap-y-6">
-            <div className="flex flex-col gap-y-2">
-              <div className="text-xl font-medium">hi 👋</div>
+          <div className="flex flex-col gap-y-6 print:gap-y-3">
+            <div className="flex flex-col gap-y-6 print:-order-2">
               <div className="flex flex-col gap-y-1">
-                <p className="text-sm">
-                  i've been fortunate to have played a role in many disciplines required in bringing
-                  products to life.
-                </p>
-                <p className="text-sm">
-                  this has made me a strong generalist, capable of fulfilling the needs of the
-                  business, while still being a passionate advocate for the customer.
-                </p>
-                <p className="text-sm">
-                  i'm at my best when coming up with a design, and then working backwards from it
-                  layer by layer.
-                </p>
-                <p className="text-sm">
-                  i believe computers should delight, and i look forward to working with folks that
-                  share said belief ✨
-                </p>
+                <div className="text-xl font-medium">hi 👋</div>
+                <div className="flex flex-col gap-y-1">
+                  <p className="text-sm">
+                    i've been fortunate to have played a role in many disciplines required in
+                    bringing products to life.
+                  </p>
+                  <p className="text-sm">
+                    this has made me a strong generalist, capable of fulfilling the needs of the
+                    business, while still being a passionate advocate for the customer.
+                  </p>
+                  <p className="text-sm">
+                    i'm at my best when coming up with a design, and then working backwards from it
+                    layer by layer.
+                  </p>
+                  <p className="text-sm">
+                    i believe computers should delight, and i look forward to working with folks
+                    that share said belief ✨
+                  </p>
+                </div>
+                <div className="text-sm">
+                  what i'm also passionate about:{" "}
+                  <span className="font-stretch-condensed font-medium">#photography</span>{" "}
+                  <span className="font-stretch-condensed font-medium">#3d-printing</span>{" "}
+                  <span className="font-stretch-condensed font-medium">#home-automation</span>{" "}
+                  <span className="font-stretch-condensed font-medium">#music</span>{" "}
+                  <span className="font-stretch-condensed font-medium">#gaming</span>{" "}
+                  <span className="font-stretch-condensed font-medium">#star-trek</span>
+                </div>
               </div>
-              <div className="text-sm">
-                what i'm also passionate about:
-                <span className="font-stretch-condensed font-medium">#photography</span>{" "}
-                <span className="font-stretch-condensed font-medium">#3d-printing</span>{" "}
-                <span className="font-stretch-condensed font-medium">#music</span>{" "}
-                <span className="font-stretch-condensed font-medium">#gaming</span>{" "}
-                <span className="font-stretch-condensed font-medium">#star-trek</span>
-              </div>
-            </div>
 
-            <hr className="border-separator-opaque" />
+              <hr className="border-separator-opaque print:hidden" />
+            </div>
 
             <div className="flex flex-col gap-y-5">
               <div>
-                <div className="grid grid-cols-[48px_1fr] grid-rows-[48px_max-content_48px_max-content]">
+                <div className="grid grid-cols-[48px_1fr] grid-rows-[48px_max-content_48px_max-content] print:grid-rows-[48px_minmax(max-content,calc(100svh-48px))_48px_max-content]">
                   <div className="row-1 col-1 place-self-center">
                     <a className="group" href="https://eq.fm">
                       <Circle
@@ -219,11 +223,12 @@ export const PageRootSectionContent = () => {
                         companion app for music, with catalog browsing, play history filtering,
                         universal track links, and customizable user profiles
                       </div>
+
                       <ul className="list-disc [&>*:not(:last-child)]:mb-2">
                         <li>
-                          <div className="inline-flex flex-col flex-wrap gap-y-2">
+                          <div className="inline-flex flex-col flex-wrap gap-y-1">
                             <div className="text-sm">product</div>
-                            <div className="text-xs flex flex-col gap-y-2">
+                            <div className="text-xs flex flex-col gap-y-1">
                               <p>
                                 prototyping / design / asset management in{" "}
                                 <Tag value="figma">Figma</Tag>
@@ -237,7 +242,7 @@ export const PageRootSectionContent = () => {
                         <li>
                           <div className="inline-flex flex-col flex-wrap gap-y-1">
                             <div className="text-sm">implementation</div>
-                            <ul className="list-outside list-disc pl-3 [&>*:not(:last-child)]:mb-3">
+                            <ul className="list-outside list-disc pl-3 [&>*:not(:last-child)]:mb-2">
                               <li>
                                 <div className="inline-flex flex-col flex-wrap gap-y-1">
                                   <div className="text-sm">iOS client</div>
@@ -247,7 +252,7 @@ export const PageRootSectionContent = () => {
                                       <Tag value="swiftui">SwiftUI</Tag> app with bits of{" "}
                                       <Tag value="uikit">UIKit</Tag>
                                     </div>
-                                    <div className="text-xs flex flex-col gap-y-2">
+                                    <div className="text-xs flex flex-col gap-y-1">
                                       <p>
                                         functionality grouped into <Tag value="swift">Swift</Tag>{" "}
                                         packages
@@ -281,7 +286,7 @@ export const PageRootSectionContent = () => {
                                       isomorphic progressive <Tag value="react">React</Tag> app
                                       implemented in <Tag value="typescript">TypeScript</Tag>
                                     </div>
-                                    <div className="text-xs flex flex-col gap-y-2">
+                                    <div className="text-xs flex flex-col gap-y-1">
                                       <p>
                                         type-safe API request abstraction with the ability to
                                         fulfill requests during server-side rendering
@@ -303,7 +308,7 @@ export const PageRootSectionContent = () => {
                                       <Tag value="typescript">TypeScript</Tag> /{" "}
                                       <Tag value="nodejs">NodeJS</Tag> monolith
                                     </div>
-                                    <div className="text-xs flex flex-col gap-y-2">
+                                    <div className="text-xs flex flex-col gap-y-1">
                                       <p>
                                         type-safe <Tag value="openapi">OpenAPI</Tag>-specified HTTP
                                         API
@@ -347,9 +352,9 @@ export const PageRootSectionContent = () => {
                                 </div>
                               </li>
                               <li>
-                                <div className="inline-flex flex-col flex-wrap gap-y-2">
+                                <div className="inline-flex flex-col flex-wrap gap-y-1">
                                   <div className="text-sm">tooling</div>
-                                  <div className="text-xs flex flex-col gap-y-2">
+                                  <div className="text-xs flex flex-col gap-y-1">
                                     <p>
                                       MusicBrainz database <Tag value="postgres">PostgreSQL</Tag> to{" "}
                                       <Tag value="sqlite">SQLite</Tag> conversion to fit fully into
@@ -362,9 +367,9 @@ export const PageRootSectionContent = () => {
                           </div>
                         </li>
                         <li>
-                          <div className="inline-flex flex-col flex-wrap gap-y-2">
+                          <div className="inline-flex flex-col flex-wrap gap-y-1">
                             <div>operations</div>
-                            <div className="text-xs flex flex-col gap-y-2">
+                            <div className="text-xs flex flex-col gap-y-1">
                               <p>
                                 <Tag value="ansible">Ansible</Tag> playbooks to bootstrap
                                 k3s-flavoured <Tag value="kubernetes">Kubernetes</Tag>
@@ -666,7 +671,7 @@ export const PageRootSectionContent = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-[48px_auto] grid-rows-[12px_48px_max-content_48px_max-content]">
+                <div className="grid grid-cols-[48px_auto] grid-rows-[12px_48px_max-content_48px_max-content] print:grid-rows-[12px_48px_minmax(max-content,160px)_48px_max-content]">
                   <div className="row-1 col-1">
                     <VerticalLine className="border-[#153558] dark:border-[#367fce]" />
                   </div>
@@ -773,7 +778,9 @@ export const PageRootSectionContent = () => {
               </div>
               <div>
                 <div className="flex flex-col gap-y-1">
-                  <div className="font-medium text-xl font-[Unbounded]">other stuff</div>
+                  <div className="font-medium text-xl print:text-lg font-[Unbounded]">
+                    other stuff
+                  </div>
                   <ul className="list-none">
                     <li className="flex gap-x-3 items-baseline">
                       <span>•</span>
@@ -796,18 +803,23 @@ export const PageRootSectionContent = () => {
                   </ul>
                 </div>
               </div>
-              {typeof sortedTags !== "undefined" && sortedTags.length > 0 ? (
-                <div className="flex flex-col gap-y-3">
-                  <div className="font-medium text-xl font-[Unbounded]">technologies</div>
-                  <div className="flex flex-wrap gap-x-1 gap-y-2">
-                    {sortedTags.map(([value, _]) => (
-                      <TagSelector key={value} value={value} setValue={setSelectedTag} />
-                    ))}
-                  </div>
+            </div>
+            {typeof sortedTags !== "undefined" && sortedTags.length > 0 ? (
+              <div className="flex flex-col gap-y-3 print:-order-1">
+                <div className="font-medium text-xl print:text-lg font-[Unbounded]">
+                  technologies
                 </div>
-              ) : (
-                <></>
-              )}
+                <div className="flex flex-wrap gap-x-1 gap-y-1">
+                  {sortedTags.map(([value, _]) => (
+                    <TagSelector key={value} value={value} setValue={setSelectedTag} />
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
+            <div className="print:-order-1 print:pt-4 print:break-after-page">
+              <PageRootSectionFooter />
             </div>
           </div>
         </div>
